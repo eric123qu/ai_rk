@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (C) 2016 Baidu, Inc. All Rights Reserved.
+  -->
+<resources>
+    <string-array name="voice">
+        <item>Yaoyao(女)</item>
+        <item>HuihuiRUS(女)</item>
+        <item>Kangkang(男)</item>
+    </string-array>
+    <string-array name="model">
+        <item>空调模型</item>
+        <item>无模型</item>
+    </string-array>
+
+
+</resources>

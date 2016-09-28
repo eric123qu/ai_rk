@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.haier.ai.airobot">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+
+    <!-- usdk权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 相机 -->
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+
+    <application
+        android:name=".MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- 请填写真实的APP_ID API_KEY SECRET_KEY -->
+        <meta-data
+            android:name="com.baidu.speech.APP_ID"
+            android:value="8578495"/>
+        <meta-data
+            android:name="com.baidu.speech.API_KEY"
+            android:value="3lsP41xKgjgWGdUCuxTgH7g1"/>
+        <meta-data
+            android:name="com.baidu.speech.SECRET_KEY"
+            android:value="52ec8fdcc2d126ebc354bcf2e986d1b6"/>
+
+        <!-- &lt;!&ndash; 请填写真实的APP_ID API_KEY SECRET_KEY &ndash;&gt; -->
+        <!-- <meta-data android:name="com.baidu.speech.APP_ID" android:value="6536447"/> -->
+        <!-- <meta-data android:name="com.baidu.speech.API_KEY" android:value="8MAxI5o7VjKSZOKeBzS4XtxO"/> -->
+        <!-- <meta-data android:name="com.baidu.speech.SECRET_KEY" android:value="Ge5GXVdGQpaxOmLzc8fOM8309ATCz9Ha"/> -->
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.WakeupService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+
+        <receiver android:name=".receiver.BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".RecordActivity">
+        </activity>
+
+        <service
+            android:name=".service.ReconizeService"
+            android:enabled="true"
+            android:exported="true">
+        </service>
+    </application>
+
+</manifest>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">AIRobot</string>
+    <string name="normal">按住 说话</string>
+    <string name="recording">松开 结束</string>
+    <string name="want_to_cancle">松开手指，取消发送</string>
+    <string name="shouzhishanghua">手指上滑，取消发送</string>
+    <string name="tooshort">录音时间过短</string>
+
+    <string name="view_record_wav">录音WAV文件</string>
+    <string name="view_record_amr">录音AMR文件</string>
+    <string name="view_stop">停止录音</string>
+
+    <string name="error_no_sdcard">没有SD卡，无法存储录音数据</string>
+    <string name="error_state_record">正在录音中，请先停止录音</string>
+    <string name="error_unknown">无法识别的错误</string>
+
+    <string name="device_open_ac">主人，已帮您打开空调</string>
+    <string name="device_close_ac">主人，已帮您关闭空调</string>
+    <string name="device_mode_smart">主人，已帮您设置智能模式</string>
+    <string name="device_mode_cool">主人，已帮您设置制冷模式</string>
+    <string name="device_mode_dehumidify">主人，已帮您设置除湿模式</string>
+    <string name="device_mode_heat">主人，已帮您设置制热模式</string>
+    <string name="device_mode_wind">主人，已帮您设置送风模式</string>
+    <string name="device_ac_temperature">主人，已帮您设置好温度</string>
+    <string name="device_ac_swing_left">主人，已帮您设置左摆风</string>
+    <string name="device_ac_swing_right">主人，已帮您设置右摆风</string>
+    <string name="device_ac_swing_top">主人，已帮您设置上摆风</string>
+    <string name="device_ac_swing_bottom">主人，已帮您设置下摆风</string>
+    <string name="device_ac_swing_center">主人，已帮您设置中摆风</string>
+    <string name="device_ac_swing_auto">主人，已帮您设置摆风</string>
+    <string name="device_aver_wind_open_ac">主人，已帮您开启匀风</string>
+    <string name="device_aver_wind_close_ac">主人，已帮您关闭匀风</string>
+    <string name="device_scene_light_open_ac">主人，已帮您打开情景灯光</string>
+    <string name="device_scene_light_close_ac">主人，已帮您关闭情景灯光</string>
+    <string name="device_assist_heat_open_ac">主人，已帮您打开辅热</string>
+    <string name="device_assist_heat_close_ac">主人，已帮您关闭辅热</string>
+    <string name="device_quiet_sleep_open_ac">主人，已帮您打开静眠开关</string>
+    <string name="device_quiet_sleep_close_ac">主人，已帮您关闭静眠开关</string>
+    <string name="device_lock_open_ac">主人，已帮您打开锁定开关</string>
+    <string name="device_lock_close_ac">主人，已帮您关闭锁定开关</string>
+</resources>
