@@ -26,25 +26,40 @@
                 android:id="@+id/tv_status_contact"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
                 android:layout_toRightOf="@id/tv_status"
                 android:textSize="18sp"
+                android:text="待唤醒"
                 />
         </RelativeLayout>
         <RelativeLayout
             android:id="@+id/rl_result"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
             android:layout_below="@id/rl_status">
 
             <TextView
                 android:id="@+id/tv_result"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="识别结果"
+                android:text="识别结果:"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"/>
 
+            <TextView
+                android:id="@+id/tv_result_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_result"
+                android:textSize="18sp"
+                android:text=""/>
+
         </RelativeLayout>
 
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_result"
+            android:onClick="onClickStop"/>
     </RelativeLayout>
 </ScrollView>
